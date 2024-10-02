@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+}
+
+#flex {
+  flex-direction: row;
+  display: flex;
+  border: 1px solid black;
+}
+
+.flexbox {
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+.flexbox:active {
+  font-size: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.flexbox::before {
+  content: ">>";
+}
+
+.list:nth-child(odd) {
+  background-color: grey;
+}
+
+.list:hover {
+  border: 1px solid red;
+}
+
+.list:focus {
+  color: green;
+}
+
+@media only screen and (max-width: 700px) {
+  #flex {
+    flex-direction: column;
+  }
+}
